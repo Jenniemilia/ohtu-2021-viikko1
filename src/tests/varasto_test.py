@@ -69,6 +69,6 @@ class TestVarasto(unittest.TestCase):
     def tulostus_toimii_oikein(self):
         saldo = self.varasto.saldo
         kapasiteetti = self.varasto.paljonko_mahtuu()
-        tulostus = f"saldo = {saldo}, vielä tilaa = {kapasiteetti}"
+        tulostus = f"saldo = {saldo}, vielä tilaa {kapasiteetti}"
         vastaus = str(self.varasto)
         self.assertEqual(vastaus, tulostus)
