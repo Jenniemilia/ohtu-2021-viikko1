@@ -45,7 +45,7 @@ class TestVarasto(unittest.TestCase):
 
         saatu_maara = self.varasto.ota_varastosta(2)
 
-        self.assertAlmostEqual(saatu_maara, 8)
+        self.assertAlmostEqual(saatu_maara, 2)
 
     def test_varastosta_ei_voi_ottaa_enempaa_kuin_saldo(self):
         otetaan = self.varasto.ota_varastosta(15)
