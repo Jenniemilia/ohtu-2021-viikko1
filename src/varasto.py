@@ -1,19 +1,14 @@
-"""def tarkista_tilavuus(luku):
+def tarkista_tilavuus(luku):
     if luku > 0.0:
         return luku
     #virheellinen, nollataan
     luku = 0.0
     return luku
-"""
+
 
 class Varasto:
-    def __init__(self, tilavuus, alku_saldo = 0):
-        #self.tilavuus = tarkista_tilavuus(tilavuus)
-        if tilavuus > 0.0:
-            self.tilavuus = tilavuus
-        #virheellinen, nollataan
-        else:
-            self.tilavuus = 0.0
+    def __init__(self, tilavuus, alku_saldo=0):
+        self.tilavuus = tarkista_tilavuus(tilavuus)
 
         if alku_saldo < 0.0:
             # virheellinen, nollataan
